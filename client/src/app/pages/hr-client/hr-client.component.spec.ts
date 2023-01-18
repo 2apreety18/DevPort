@@ -1,5 +1,8 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HrClientComponentsComponent } from 'src/app/components/hr-client-components/hr-client-components.component';
+import { ServiceService } from 'src/app/services/service.service';
 
 import { HrClientComponent } from './hr-client.component';
 
@@ -10,7 +13,7 @@ describe('HrClientComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ HrClientComponent ],
-      imports:[HttpClientModule]
+      imports:[HttpClientTestingModule]
     })
     .compileComponents();
 

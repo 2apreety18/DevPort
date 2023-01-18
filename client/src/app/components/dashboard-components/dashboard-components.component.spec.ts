@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -10,7 +11,7 @@ describe('DashboardComponentsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DashboardComponentsComponent ],
-      imports:[ReactiveFormsModule]
+      imports:[ReactiveFormsModule,HttpClientTestingModule]
 
     })
     .compileComponents();
