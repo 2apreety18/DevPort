@@ -54,20 +54,25 @@ ngOnInit(): void {
 
 handleSubmit() {
   const loginFormValue  = this.loginForm.value;
-  console.log(loginFormValue);
-  if (loginFormValue) {
+ 
+  if (loginFormValue.email && loginFormValue.password) {
 
-        this.profileData.postLoginData(loginFormValue).subscribe({
-          next: (res: any) => {
-            console.log("Res :",res.body)
-            localStorage.setItem('accessToken', res.headers.get('authorization'));
-            localStorage.setItem('user', JSON.stringify(res.body.user));
-            localStorage.setItem('userId',res.body.user?._id)
-            this.routerJump.navigate([`/dashboard`])
-        },
-        error: error => this.errorMsg = error.error
-        });
-
+        if(loginFormValue.password.length < 7){
+          this.errorMsg = 'Your password must be atleast 6 characters long.'
+        } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(loginFormValue.email))) {
+          this.errorMsg = 'You have entered an invalid email address!'
+        } else {
+          this.profileData.postLoginData(loginFormValue).subscribe({
+            next: (res: any) => {
+              console.log("Res :",res.body)
+              localStorage.setItem('accessToken', res.headers.get('authorization'));
+              localStorage.setItem('user', JSON.stringify(res.body.user));
+              localStorage.setItem('userId',res.body.user?._id)
+              this.routerJump.navigate([`/dashboard`])
+          },
+          error: error => this.errorMsg = error.error
+          });
+        }
 
   } else {
     this.errorMsg = 'Please enter email and password.'
