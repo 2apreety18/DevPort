@@ -16,7 +16,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SignupComponent {
   signInForm = new FormGroup({
-    email: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required,Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
   constructor(
@@ -24,17 +24,17 @@ export class SignupComponent {
     private profileData: ServiceService,
     private router: ActivatedRoute,
     private routerJump: Router
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   handleSubmit() {
     let signInFormValue: any = this.signInForm.value;
     this.profileData.postRegData(signInFormValue).subscribe(
       (res: any) => {
-      console.log(res);
-      localStorage.setItem("userId",res.userId)
-      this.routerJump.navigate([`/dashboard`]);
-    });
+        console.log(res);
+        localStorage.setItem("userId", res.userId)
+        this.routerJump.navigate([`/dashboard`]);
+      });
   }
 }

@@ -16,7 +16,7 @@ describe('SignupComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [SignupComponent],
-      imports: [RouterTestingModule,ReactiveFormsModule,HttpClientTestingModule],
+      imports: [RouterTestingModule, ReactiveFormsModule, HttpClientTestingModule],
       providers: [ServiceService]
     })
       .compileComponents();
@@ -29,5 +29,23 @@ describe('SignupComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should check email validation while signup', () => {
+    let email = component.signInForm.controls['email'];
+    email.setValue('test@gmail.com');
+    expect(email.valid).toBeTruthy();
+    expect(email.value).toEqual('test@gmail.com');
+    expect(email.invalid).toBeFalsy();
+    expect(email.errors).toBeNull();
+
+  })
+
+  it('should check password validation while signup ', () => {
+    let password = component.signInForm.controls['password'];
+    password.setValue('12345678');
+    expect(password.valid).toBeTruthy();
+    expect(password.value).toEqual('12345678');
+    expect(password.invalid).toBeFalsy();
+  })
 
 });
