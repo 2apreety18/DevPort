@@ -1,7 +1,8 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { DashboardComponentsComponent } from './dashboard-components.component';
 
@@ -12,7 +13,10 @@ describe('DashboardComponentsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DashboardComponentsComponent ],
-      imports:[ReactiveFormsModule,HttpClientTestingModule,RouterTestingModule]
+      imports:[ReactiveFormsModule,HttpClientTestingModule,RouterTestingModule,FormsModule],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ],
 
     })
     .compileComponents();
