@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { leetcode } from 'src/app/interfaces/leetcode';
+import { profile } from 'src/app/interfaces/profile';
 import { ServiceService } from 'src/app/services/service.service';
 
 @Component({
@@ -8,9 +10,9 @@ import { ServiceService } from 'src/app/services/service.service';
   styleUrls: ['./web-view-components.component.css']
 })
 export class WebViewComponentsComponent {
-  profileInfo!: any;
+  profileInfo!: profile;
   imgSrc: any;
-  leetCode: string | undefined;
+  leetCode!: leetcode;
   leetcodeData: any;
   leetcodeInfo: any;
   // gitInfo: any;
@@ -76,7 +78,7 @@ export class WebViewComponentsComponent {
   }
   
 
-  ngOnInit():void{
+  ngOnInit(){
     // console.log(this.imgSrc)
     this.getProfile()
     
