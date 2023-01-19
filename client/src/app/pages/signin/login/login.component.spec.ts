@@ -36,6 +36,7 @@ describe('LoginComponent', () => {
 
   it('should create the form', () => {
     expect(component.loginForm).toBeTruthy();
+    expect(component.loginForm.invalid).toBeFalsy();
   });
 
   it('should set the email control to "testing@gmail.com"', () => {
