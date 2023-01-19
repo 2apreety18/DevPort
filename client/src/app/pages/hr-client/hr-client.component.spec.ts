@@ -1,10 +1,9 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HrClientComponentsComponent } from 'src/app/components/hr-client-components/hr-client-components.component';
-import { ServiceService } from 'src/app/services/service.service';
 
 import { HrClientComponent } from './hr-client.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HrClientComponent', () => {
   let component: HrClientComponent;
@@ -12,8 +11,8 @@ describe('HrClientComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HrClientComponent ],
-      imports:[HttpClientTestingModule]
+      declarations: [ HrClientComponent, HrClientComponentsComponent ],
+      imports:[HttpClientTestingModule, RouterTestingModule]
     })
     .compileComponents();
 
