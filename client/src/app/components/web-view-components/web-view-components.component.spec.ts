@@ -1,17 +1,31 @@
-import { UserAccountsWebComponent } from './user-accounts-web/user-accounts-web.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BasicInfoWebComponent } from './basic-info-web/basic-info-web.component';
-import { ContactFormWebComponent } from './contact-form-web/contact-form-web.component';
-import { EducationsWebComponent } from './educations-web/educations-web.component';
-import { ExperiencesWebComponent } from './experiences-web/experiences-web.component';
-import { ProjectsWebComponent } from './projects-web/projects-web.component';
+
 
 import { WebViewComponentsComponent } from './web-view-components.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { ServiceService } from 'src/app/services/service.service';
+import { profileData } from 'src/app/mocks/profile';
 
 describe('WebViewComponentsComponent', () => {
   let component: WebViewComponentsComponent;
   let fixture: ComponentFixture<WebViewComponentsComponent>;
 
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ WebViewComponentsComponent],
+      imports:[HttpClientTestingModule, RouterTestingModule],
+      schemas: [ NO_ERRORS_SCHEMA],
+      providers: [ServiceService, profileData]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(WebViewComponentsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
 
   it('should create', () => {

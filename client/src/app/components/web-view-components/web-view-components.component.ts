@@ -32,7 +32,7 @@ export class WebViewComponentsComponent {
     private router: ActivatedRoute
   ) {}
   profileID:String = this.router.snapshot.params['id'];
-  getProfile(): void {
+  getProfile() {
     this.profileData.getProfileData(this.profileID).subscribe(res=> {
       this.profileInfo = res;
       this.imgSrc = "https://ghchart.rshah.org/"+this.profileInfo.userAccInfo.githubLink
