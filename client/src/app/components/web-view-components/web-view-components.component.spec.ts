@@ -11,8 +11,7 @@ import { profileData } from 'src/app/mocks/profile';
 describe('WebViewComponentsComponent', () => {
   let component: WebViewComponentsComponent;
   let fixture: ComponentFixture<WebViewComponentsComponent>;
-
-
+  
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ WebViewComponentsComponent],

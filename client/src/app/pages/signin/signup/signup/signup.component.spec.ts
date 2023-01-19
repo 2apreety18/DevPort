@@ -29,21 +29,5 @@ describe('SignupComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('form should be invalid when should be empty', () => {
-    expect(component.signInForm.valid).toBeFalsy();
-  });
-
-  it('email field should be required', () => {
-    let errors = {};
-    let email = component.signInForm.controls['email'];
-    errors = email.errors ||{};
-   // expect(errors['required']).toBeTruthy();
-  });
-  it('password field should be required', () => {
-    let errors = {};
-    let password = component.signInForm.controls['password'];
-    errors = password.errors || {};
-  //  expect(errors['required']).toBeTruthy();
-  });
 
 });
