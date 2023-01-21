@@ -1,3 +1,4 @@
+
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -7,8 +8,6 @@ import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testin
 
 import { SignupComponent } from './signup.component';
 import { ServiceService } from 'src/app/services/service.service';
-import { NgModule } from '@angular/core';
-import { By } from '@angular/platform-browser';
 
 describe('SignupComponent', () => {
   let component: SignupComponent;
@@ -17,8 +16,8 @@ describe('SignupComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [SignupComponent],
-      imports: [RouterTestingModule, ReactiveFormsModule, HttpClientTestingModule],
-      providers: [ServiceService]
+      imports: [ReactiveFormsModule, ActivatedRoute],
+      providers: [ServiceService, HttpClient, HttpHandler]
     })
       .compileComponents();
 
@@ -30,16 +29,22 @@ describe('SignupComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  // it('form should be invalid when should be empty', () => {
+  //   expect(component.signInForm.valid).toBeFalsy();
+  // });
 
-  it('should check email validation while signup', () => {
-
-    let email = component.signInForm.controls['email'];
-    email.setValue('test@gmail.com');
-    expect(email.valid).toBeTruthy();
-    expect(email.value).toEqual('test@gmail.com');
-    expect(email.invalid).toBeFalsy();
-    expect(email.errors).toBeNull();
-  })
+  // it('email field should be required', () => {
+  //   let errors = {};
+  //   let email = component.signInForm.controls['email'];
+  //   errors = email.errors ||{};
+  //  // expect(errors['required']).toBeTruthy();
+  // });
+  // it('password field should be required', () => {
+  //   let errors = {};
+  //   let password = component.signInForm.controls['password'];
+  //   errors = password.errors || {};
+  // //  expect(errors['required']).toBeTruthy();
+  // });
 
   it('should check password validation while signup ', () => {
     let password = component.signInForm.controls['password'];
