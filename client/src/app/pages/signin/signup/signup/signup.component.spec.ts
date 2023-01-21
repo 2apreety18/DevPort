@@ -43,11 +43,18 @@ describe('SignupComponent', () => {
   it('should check invalid when inputs are empty - Reactive form', () => {
     expect(component.signInForm.invalid).toBeTruthy();
   })
-  it('should disableattribute on submit button when signup form is invalid',()=>{
+
+  it('should disableattribute on submit button when signup form is invalid', () => {
+    component.signInForm.get('email')?.setValue(null);
+    const loginBtn = fixture.debugElement.query(By.css('button')).nativeElement;
+    expect(loginBtn.disabled).toBeTrue();
+    expect(loginBtn.textContent).toContain('SignIn');
   })
-  it('Should call handleSubmit when clicked on submit button',() => {
+
+  it('Should call handleSubmit when clicked on submit button', () => {
     spyOn(component, 'handleSubmit');
     fixture.debugElement.query(By.css('button')).triggerEventHandler('click', null);
     expect(component.handleSubmit).toHaveBeenCalled();
+
   })
 });
