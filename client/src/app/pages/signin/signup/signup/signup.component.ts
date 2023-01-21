@@ -16,9 +16,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SignupComponent {
   signInForm = new FormGroup({
-    email: new FormControl('', [Validators.required,Validators.email]),
+    email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
+
+  isSubmitted: Boolean = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private profileData: ServiceService,
@@ -33,6 +36,7 @@ export class SignupComponent {
     this.profileData.postRegData(signInFormValue).subscribe(
       (res: any) => {
         console.log(res);
+       this.isSubmitted=true;
         localStorage.setItem("userId", res.userId)
         this.routerJump.navigate([`/dashboard`]);
       });
