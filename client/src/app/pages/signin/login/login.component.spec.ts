@@ -1,6 +1,6 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
 import { FormBuilder, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { ServiceService } from 'src/app/services/service.service';
 
@@ -59,6 +59,31 @@ describe('LoginComponent', () => {
     buttonElement.click();
     expect(component.handleSubmit).toHaveBeenCalled();
   });
+
+  // it('check the form controls inside a form group', fakeAsync(()=>{
+  //   fixture.detectChanges();
+  //   fixture.whenStable().then(() => {
+  //     const email: HTMLInputElement = fixture.debugElement.nativeElement.querySelector('#email');
+  //     const password: HTMLInputElement = fixture.debugElement.nativeElement.querySelector('#password');
+
+  //     email.value = 'testing@gmail.com',
+  //     password.value = '123456',
+
+  //     email.dispatchEvent(new Event('input'));
+  //     password.dispatchEvent(new Event('input'));
+
+  //     fixture.detectChanges();
+  //     fixture.whenStable().then(() => {
+  //       expect(component.loginForm.value).toEqual({
+  //         email: 'testing@gmail.com',
+  //         password: '123456'
+  //       })
+  //     })
+  //   })
+  // }));
+
+ 
+  
+})
   
 
-});
