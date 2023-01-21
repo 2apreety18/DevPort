@@ -53,6 +53,7 @@ describe('SignupComponent', () => {
 
   it('Should call handleSubmit when clicked on submit button', () => {
     spyOn(component, 'handleSubmit');
+    
     fixture.debugElement.query(By.css('button')).triggerEventHandler('click', null);
     expect(component.handleSubmit).toHaveBeenCalled();
 
