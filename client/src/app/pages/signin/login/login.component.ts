@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import {
   FormArray,
   FormBuilder,
@@ -17,6 +17,11 @@ import { signin } from 'src/app/interfaces/signin';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  login() {
+    throw new Error('Method not implemented.');
+  }
+  @Output() loggedIn = new EventEmitter<any>();
+
   errorMsg : String | undefined
   loginForm = new FormGroup({
     email: new FormControl('',[Validators.required]),

@@ -49,4 +49,22 @@ describe('LoginComponent', () => {
     expect(component.loginForm.value.password).toEqual('123456');
   });
 
+  it('submitting a form emits a user', () => {
+    expect(component.loginForm.valid).toBeFalsy();
+    component.loginForm.controls['email'].setValue("test@test.com");
+    component.loginForm.controls['password'].setValue("123456");
+    expect(component.loginForm.valid).toBeTruthy();
+
+    let user: any;
+    // Subscribe to the Observable and store the user in a local variable.
+    component.loggedIn.subscribe((value) => user = value);
+
+    // Trigger the login function
+    component.login();
+
+    // Now we can check to make sure the emitted value is correct
+    expect(user.email).toBe("test@test.com");
+    expect(user.password).toBe("123456");
+});
+
 });
