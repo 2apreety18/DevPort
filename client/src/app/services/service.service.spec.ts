@@ -10,7 +10,8 @@ describe('ServiceService', () => {
     });
     service = TestBed.inject(ServiceService);
   });
-  it('should be created', () => {
+
+  it('should be created service', () => {
     expect(service).toBeTruthy();
   });
 });

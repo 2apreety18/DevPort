@@ -1,11 +1,12 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { FormBuilder, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { ServiceService } from 'src/app/services/service.service';
 
 import { LoginComponent } from './login.component';
 import { By } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 
 describe('LoginComponent', () => {
@@ -13,18 +14,24 @@ describe('LoginComponent', () => {
   let fixture: ComponentFixture<LoginComponent>;
   let formBuilder;
   let buttonElement: HTMLElement;
+  let location: Location;
+  let router: Router;
 
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LoginComponent],
       imports:[HttpClientTestingModule,ReactiveFormsModule,RouterTestingModule],
-      providers:[ServiceService, FormBuilder]
+      providers:[ServiceService, FormBuilder, Router]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     buttonElement = fixture.debugElement.query(By.css('button')).nativeElement;
+
+    router = TestBed.get(Router);
+    router.initialNavigation();
+
 
     formBuilder = new FormBuilder();
     let formGroup;
@@ -35,6 +42,7 @@ describe('LoginComponent', () => {
     fixture.detectChanges();
   });
 
+ 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
@@ -59,6 +67,8 @@ describe('LoginComponent', () => {
     buttonElement.click();
     expect(component.handleSubmit).toHaveBeenCalled();
   });
+
+
 
   // it('check the form controls inside a form group', fakeAsync(()=>{
   //   fixture.detectChanges();
