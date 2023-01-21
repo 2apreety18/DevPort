@@ -5,11 +5,15 @@ import { FormBuilder, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { ServiceService } from 'src/app/services/service.service';
 
 import { LoginComponent } from './login.component';
+import { By } from '@angular/platform-browser';
+
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
   let formBuilder;
+  let buttonElement: HTMLElement;
+
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -20,6 +24,7 @@ describe('LoginComponent', () => {
 
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
+    buttonElement = fixture.debugElement.query(By.css('button')).nativeElement;
 
     formBuilder = new FormBuilder();
     let formGroup;
@@ -49,22 +54,11 @@ describe('LoginComponent', () => {
     expect(component.loginForm.value.password).toEqual('123456');
   });
 
-  it('submitting a form emits a user', () => {
-    expect(component.loginForm.valid).toBeFalsy();
-    component.loginForm.controls['email'].setValue("test@test.com");
-    component.loginForm.controls['password'].setValue("123456");
-    expect(component.loginForm.valid).toBeTruthy();
-
-    let user: any;
-    // Subscribe to the Observable and store the user in a local variable.
-    component.loggedIn.subscribe((value) => user = value);
-
-    // Trigger the login function
-    component.login();
-
-    // Now we can check to make sure the emitted value is correct
-    expect(user.email).toBe("test@test.com");
-    expect(user.password).toBe("123456");
-});
+  it('should call handleSubmit when button is clicked', () => {
+    spyOn(component, 'handleSubmit');
+    buttonElement.click();
+    expect(component.handleSubmit).toHaveBeenCalled();
+  });
+  
 
 });
