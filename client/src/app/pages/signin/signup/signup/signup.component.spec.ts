@@ -46,16 +46,14 @@ describe('SignupComponent', () => {
 
   it('should disableattribute on submit button when signup form is invalid', () => {
     component.signInForm.get('email')?.setValue(null);
-    const loginBtn = fixture.debugElement.query(By.css('button')).nativeElement;
-    expect(loginBtn.disabled).toBeTrue();
-    expect(loginBtn.textContent).toContain('SignIn');
+    const signupBtn = fixture.debugElement.query(By.css('button')).nativeElement;
+    expect(signupBtn.disabled).toBeTrue();
+    expect(signupBtn.textContent).toContain('SignUp');
   })
 
   it('Should call handleSubmit when clicked on submit button', () => {
     spyOn(component, 'handleSubmit');
-    
     fixture.debugElement.query(By.css('button')).triggerEventHandler('click', null);
     expect(component.handleSubmit).toHaveBeenCalled();
-
   })
 });
