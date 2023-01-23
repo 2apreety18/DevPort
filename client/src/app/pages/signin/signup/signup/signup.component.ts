@@ -21,6 +21,7 @@ export class SignupComponent {
   });
 
   isSubmitted: Boolean = false;
+  SignUp:string ='Sign Up'
 
   constructor(
     private formBuilder: FormBuilder,

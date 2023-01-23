@@ -6,26 +6,25 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 
-// ami akram the boss!
-// describe('WebViewComponent', () => {
-//   let component: WebViewComponent;
-//   let fixture: ComponentFixture<WebViewComponent>;
+describe('WebViewComponent', () => {
+  let component: WebViewComponent;
+  let fixture: ComponentFixture<WebViewComponent>;
 
-//   beforeEach(async () => {
-//     await TestBed.configureTestingModule({
-//       declarations: [ WebViewComponent],
-//       imports:[HttpClientTestingModule, RouterTestingModule],
-//       schemas: [ NO_ERRORS_SCHEMA],
-//       providers: [ServiceService]
-//     })
-//     .compileComponents();
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ WebViewComponent],
+      imports:[HttpClientTestingModule, RouterTestingModule],
+      schemas: [ NO_ERRORS_SCHEMA],
+      providers: [ServiceService]
+    })
+    .compileComponents();
 
-//     fixture = TestBed.createComponent(WebViewComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
+    fixture = TestBed.createComponent(WebViewComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-//   it('should not create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+  it('should not create', () => {
+    expect(component).toBeTruthy();
+  });
+});

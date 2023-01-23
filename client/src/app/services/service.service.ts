@@ -28,7 +28,7 @@ export class ServiceService {
   }
 
   getProfileData(id: any): Observable<profile> {
-    console.log('Id : ', id);
+    // console.log('Id : ', id);
     return this.http.get<profile>(`${this.Url}/${id}`);
   }
 
@@ -52,7 +52,7 @@ export class ServiceService {
     return this.http.post<signin>(`${this.loginURL}`,data, {observe: 'response'})
   }
   getImage(username:string){
-    console.log(`${this.githubURL}${username}`)
+    // console.log(`${this.githubURL}${username}`)
     return this.http.get<githubdata>(`${this.githubURL}${username}`)
   }
   get isLoggedIn(): boolean {

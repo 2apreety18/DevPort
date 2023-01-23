@@ -24,11 +24,7 @@ export class DashboardComponentsComponent {
   skillExists: string = '';
   profileForm = new FormGroup({
     basicInfo: new FormGroup({
-      // fullname: new FormControl('',
-      // [
-      //   Validators.required,
-      //   Validators.minLength(4),
-      // ]),
+
       fullname: new FormControl(''),
       jobTitle: new FormControl(''),
       email: new FormControl(''),
@@ -105,17 +101,6 @@ export class DashboardComponentsComponent {
     console.log('Profile ID : ', this.profileID);
     this.getProfile();
 
-    // const userStr = localStorage.getItem('user');
-    // if(userStr){
-    //   const user = JSON.parse(userStr);
-    //   this.routerJump.navigate([`'dashboard/'+${this.profileID}`])
-    //   // if(user.usertype === 'admin'){
-    //   //   this.routerJump.navigate([])
-    //   // }
-    // }
-    // else{
-    //   this.routerJump.navigate([`login`])
-    // }
   }
 
   setNavElements(clickedItem: string) {
@@ -125,7 +110,7 @@ export class DashboardComponentsComponent {
   getProfile(): void {
     this.profileData.getProfileData(this.profileID).subscribe((res: any) => {
       this.profileInfo = res;
-      console.log('User Profile Data : ', res);
+      // console.log('User Profile Data : ', res);
       this.profileForm.patchValue(res);
       this.skillsData = res.basicInfo.skillsData
         ? res.basicInfo.skillsData
@@ -159,7 +144,5 @@ export class DashboardComponentsComponent {
     const index = this.skillsData.indexOf(skill);
     this.skillsData.splice(index, 1);
   }
-  // postRegData(){
-  //   this.
-  // }
+
 }
