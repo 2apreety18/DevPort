@@ -19,7 +19,7 @@
               formControlName="fullname"
               type="text"
               class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              id="exampleText0"
+              id="fullName1"
               value=""
               placeholder="Full Name"
             />
@@ -32,7 +32,7 @@
               formControlName="jobTitle"
               type="text"
               class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              id="exampleText0"
+              id="jobTitle1"
               value=""
               placeholder="Job Title ex: Full Stack Developer"
             />
@@ -42,7 +42,7 @@
               formControlName="email"
               type="email"
               class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              id="exampleText0"
+              id="email1"
               value=""
               placeholder="Email Address"
             />
@@ -54,8 +54,8 @@
             <textarea
               formControlName="careerObj"
               class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              id="exampleFormControlTextarea1"
-              rows="3"
+              id="careerObj1"
+              rows="2"
               placeholder="Career Objective"
             ></textarea>
           </div>
@@ -64,13 +64,14 @@
             <span>
               <input
                 class="form-control block w-25 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                id="exampleFormControlTextarea1"
+                id="skills1"
                 rows="3"
                 placeholder="Your Skills"
                 [(ngModel)]="skillsInput"
                 [ngModelOptions]="{ standalone: true }"
               />
               <button
+              id="skillBtn1"
                 class="btn text-white bg-teal-600 p-2 mt-4 mb-4 rounded-sm"
                 (click)="onAddSkills()"
               >
@@ -559,6 +560,7 @@
   
       <button
         type="submit"
+        id="submit1"
         [disabled]="!profileForm.valid"
         (click)="handleSubmit()"
         class="bg-white mb-10 ml-10 w-5/12 hover:bg-gray-100 text-gray-800 font-semibold py-2 border border-gray-400 rounded shadow mt-10 mr-24"
