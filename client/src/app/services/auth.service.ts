@@ -10,4 +10,8 @@ import { signin } from '../interfaces/signin';
 export class AuthService {
 
   constructor() { }
+
+  getId(){
+    return localStorage.getItem('userId');
+  }
 }
