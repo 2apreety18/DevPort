@@ -1,5 +1,5 @@
 
-  const basicInfo = {
+ export const basicInfo = {
     fullname: " ",
     email: "",
     careerObj: "",
@@ -7,13 +7,13 @@
     // pphoto: string;
   }
   
-  const userAccInfo = {
+ export const userAccInfo = {
     githubLink: "",
     soLink: "",
     leetcodeLink: ""
   }
   
-  const education = {
+ export const education = {
     eduLevel1: "",
     instName1: "",
     eduDescription1: "",
@@ -27,7 +27,7 @@
     eduDescription3: ""
   }
   
-  const experiences = {
+  export const experiences = {
     companyName1: "",
     jobRole1: "",
     jobDescription1: "",
@@ -41,7 +41,7 @@
     jobDescription3: ""
   }
   
-  const projects = {
+  export const projects = {
     projectTitle1: "",
     demovideo1: "",
     projectDescription1: "",
