@@ -11,7 +11,7 @@ describe('Starting e2e', () => {
   //   cy.get('#negivate').click().visit('/signup');
   // })
   it('Should register and add basic info form', () => {
-    cy.get('#email').type('test48@gmail.com');
+    cy.get('#email').type('test49@gmail.com');
     cy.get('#password').type('1234567');
     cy.get('#submit-btn').click();
 
