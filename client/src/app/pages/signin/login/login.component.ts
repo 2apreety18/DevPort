@@ -62,7 +62,7 @@ handleSubmit() {
  
   if (loginFormValue.email && loginFormValue.password) {
 
-        if(loginFormValue.password.length < 7){
+        if(loginFormValue.password.length < 3){
           this.errorMsg = 'Your password must be atleast 6 characters long.'
         } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(loginFormValue.email))) {
           this.errorMsg = 'You have entered an invalid email address!'
