@@ -22,6 +22,8 @@ describe('Starting e2e', () => {
     cy.get('#skills1').type('Angular', { force: true });
     cy.get('#skillBtn1').click({ force: true });
     cy.get('#submit1').click({ force: true });
+
+
   })
 })
 
