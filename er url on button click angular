@@ -1,0 +1,427 @@
+[33mcommit bfad033b6bc90e67141bb8b9a9d7c268a49b4e82[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m, [m[1;31morigin/testing[m[33m)[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Mon Jan 23 10:23:08 2023 +0600
+
+     stash poped
+
+[33mcommit 7932710e36feb3f2e5c5d9d9e8e55240781b6fe8[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Mon Jan 23 10:15:41 2023 +0600
+
+    added dashboard codes on login
+
+[33mcommit a2228b28de9914a682d2312babb8b737c5b9165a[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Mon Jan 23 09:04:56 2023 +0600
+
+    registration.cy renamed
+
+[33mcommit c14053aa9fedd82a315a6ba91631ed9e6ab433b3[m
+Merge: f650489e 9a1481f7
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Mon Jan 23 09:03:36 2023 +0600
+
+    Merge branch 'testing' of https://github.com/2apreety18/DevPort into testing
+
+[33mcommit f650489e719e134d7d5fca737e8f7b19bebb9e16[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Mon Jan 23 09:03:28 2023 +0600
+
+     before login pull
+
+[33mcommit 9a1481f77c7b0e0aed67aef6d2afac78af50dbbc[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Mon Jan 23 09:00:05 2023 +0600
+
+    Added e2e for login
+
+[33mcommit 140c9b8835c788d6e9b9f502085dcf024e9593e1[m
+Merge: a6a40e91 407d745e
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Mon Jan 23 08:34:07 2023 +0600
+
+    merge solved
+
+[33mcommit a6a40e918b2d8b363538d90c22b87692c06e2293[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Mon Jan 23 08:19:34 2023 +0600
+
+    last changes
+
+[33mcommit 407d745eaa22ef8bd5a89133286f116d16f36264[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sun Jan 22 20:16:54 2023 +0600
+
+    e2e testing done
+
+[33mcommit 5e0b8a0eac3ebda412e2eb59ff272d443a3e5a62[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 16:35:46 2023 +0600
+
+     starting router testing
+
+[33mcommit f4bb71c1f2cca894ee27e2a1f4aeaf8343feefcb[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Sat Jan 21 16:27:11 2023 +0600
+
+    testing pull
+
+[33mcommit 93218ec16916a2bd55a1834f7d52dfaa29544763[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Sat Jan 21 14:04:13 2023 +0600
+
+    tried fakeAsync()
+
+[33mcommit a59ce236961d5b5985595788a2c2b09fcb9134a8[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 13:54:12 2023 +0600
+
+    signup form complete
+
+[33mcommit 15eed6e4dc9c2cd368777c76c8a212863800dbf7[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 12:46:59 2023 +0600
+
+     signUp component spelling fixed
+
+[33mcommit 0ef819186cdf8741d6fc122c25fdf4ce9d9f380b[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 12:41:27 2023 +0600
+
+     test:signUp  button disable and content testing
+
+[33mcommit 1f435ff26cac04f55b52a35bdd96f98840761cd4[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 12:38:13 2023 +0600
+
+    test: login button disable and content testing
+
+[33mcommit 2e6c79fdfdbebebd82e6ce1d8c45fff6cc4063cf[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Sat Jan 21 12:31:02 2023 +0600
+
+    login button testing
+
+[33mcommit d575e68a9f8f75169b1bf5f6084669be24ed07aa[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Sat Jan 21 12:10:03 2023 +0600
+
+    conflict resolved and signup
+
+[33mcommit d85f92d9724ff5b2a7cad8b9c3e921a4098a9109[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Sat Jan 21 11:07:08 2023 +0600
+
+     test : signup test completed
+
+[33mcommit 6cda0b59830b6cb6d9b7846ad38ee7d783d4b212[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Sat Jan 21 09:02:25 2023 +0600
+
+    starting dashboard form
+
+[33mcommit 41a5c9f78faf170639709176d731d5a0f1d99908[m
+Merge: 35f777da 82b9ea1b
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 16:40:38 2023 +0600
+
+    Merge branch 'testing' of https://github.com/2apreety18/DevPort into testing
+
+[33mcommit 35f777dab121cf6aa3cb7c2736f84536ada9f462[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 16:39:39 2023 +0600
+
+     registration testing email and pass
+
+[33mcommit 82b9ea1b23a1984091f660658939baa195062739[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 16:39:29 2023 +0600
+
+    login validation+ testing
+
+[33mcommit ae890335a369c7e9db7c7c8d38c4302101cf8373[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 15:10:06 2023 +0600
+
+    akram test
+
+[33mcommit af498a229cfcfefeadeeaba3cc7bde97767c8263[m
+Merge: f04cb397 431b0232
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 15:05:06 2023 +0600
+
+    'web component commenting'
+
+[33mcommit f04cb39725c85e2804efb1356a931339e5cbc462[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 15:04:11 2023 +0600
+
+    error fixing
+
+[33mcommit 431b0232869baa5d5928e6be052fa49bfe83e42c[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 15:00:41 2023 +0600
+
+    commented out web-view err
+
+[33mcommit 0e392312ecf94a1675525cb05d02cacf36a17898[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 14:51:13 2023 +0600
+
+    'merge conflit at web page solved"
+
+[33mcommit f2336d08b5f17ff205e8b28de90a5f1c2b059ec1[m
+Merge: 683d7ac3 06c2c2d6
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 14:50:35 2023 +0600
+
+    Merge branch 'testing' of https://github.com/2apreety18/DevPort into testing
+
+[33mcommit 683d7ac316635dbaa23c50e7ff755ae46fc2413e[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 14:47:09 2023 +0600
+
+    login error fixed
+
+[33mcommit 06c2c2d6af4ed988f9a5fca4d8560c22b2b7f5b1[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 12:21:17 2023 +0600
+
+    basic  info err
+
+[33mcommit e5240bc8daf517691b45b4997a0ea112997dcb83[m
+Merge: 44f14c60 08227858
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 11:29:19 2023 +0600
+
+    nothing new
+
+[33mcommit 44f14c60d69db721378438aea3c0b77a4a4547c7[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 11:26:00 2023 +0600
+
+    Web cmp err solved
+
+[33mcommit 082278581975696d25023c9efe5a8ca898e37a04[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 11:23:27 2023 +0600
+
+     test: dashboard-component fixed
+
+[33mcommit 9346b9512f3840e6c4a2bd42ebe5cba701b664b2[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 11:03:58 2023 +0600
+
+    solved hrclient cmp cmp err
+
+[33mcommit c346deeda6e37ee9f1d1f435c49b81d6d288485a[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 10:56:35 2023 +0600
+
+    RESOLVED DASHBOARD-COMPONENTS-COMPONENT MERGE CONF
+
+[33mcommit 462fbde8aaf0231166b71f4eaaa4a661f9f1ff9a[m
+Merge: 1cce4a9a c879b0ff
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 10:55:25 2023 +0600
+
+    Merge branch 'testing' of https://github.com/2apreety18/DevPort into testing
+
+[33mcommit 1cce4a9a86c9f13493cded0f99ff259c406d44ff[m
+Author: 2apreety18 <2apreety@gmail.com>
+Date:   Thu Jan 19 10:46:16 2023 +0600
+
+    login and dashcomponent-component err
+
+[33mcommit c879b0ffd83de06fd3e6fe14bd050dfccdb0257b[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Thu Jan 19 10:38:45 2023 +0600
+
+    test:DashboardComponentsComponent
+
+[33mcommit fb1e6c3edc85b1caa59e4493b80700744ccc9a49[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Wed Jan 18 18:17:36 2023 +0600
+
+     test:educations-dashboard-component fixed
+
+[33mcommit f86a690b016ffe069338eeb53f553aafa1319aa5[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Wed Jan 18 18:12:19 2023 +0600
+
+     test: service fixed
+
+[33mcommit a4326ae04077b5572eddac5f4f7c8df3d146aaee[m
+Merge: a59b9a1d c53cadb7
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Wed Jan 18 17:57:54 2023 +0600
+
+    Merge branch 'testing' of https://github.com/2apreety18/DevPort into testing
+
+[33mcommit a59b9a1d217e9508adb51fafb837d68df7775a57[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Wed Jan 18 17:57:32 2023 +0600
+
+    test:fixed login,logout
+
+[33mcommit c53cadb78e6491c160955803577ffc9042955c65[m
+Author: Noel Alam <noel.alam9999@gmail.com>
+Date:   Wed Jan 18 17:49:59 2023 +0600
+
+    test:fixed app test file
+
+[33mcommit e6ba283afafc44dc489d5ac35dd47c4273b433f5[m
+Author: Noel Alam <noel.alam9999@gmail.com>
+Date:   Wed Jan 18 17:47:16 2023 +0600
+
+    test:fixed experiences
+
+[33mcommit b23150d7e4aad7d23b4a2183e71ac1b0fe31067b[m
+Author: akramRickon <akramhsin29@gmail.com>
+Date:   Wed Jan 18 16:02:26 2023 +0600
+
+     testing working
+
+[33mcommit 11524e7adcbe121c984dfa7c7cd256e20a66fa00[m[33m ([m[1;31morigin/development[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelopment[m[33m)[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Mon Jan 16 18:04:28 2023 +0600
+
+    folder structure-1
+
+[33mcommit 49b222b7f7b2dc2d83a47756f24212064574398f[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Mon Jan 16 11:21:21 2023 +0600
+
+    github stats added
+
+[33mcommit 909a1f798496f0b5d6d68aa49dc78783d2b5040e[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Mon Jan 16 03:17:31 2023 +0600
+
+    ui updated
+
+[33mcommit d39359fde7efc46dca31d9288ff9646c81a9ae91[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Mon Jan 16 00:27:50 2023 +0600
+
+    JWT & private route worked
+
+[33mcommit a395e1fec321696dc8454a46f880a57d9a930a01[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Sun Jan 15 19:11:36 2023 +0600
+
+    jwt tried, ui updated
+
+[33mcommit 409457f56fb0608e6e0cdc46c859892a191d11ee[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Sun Jan 15 02:30:23 2023 +0600
+
+    chips update
+
+[33mcommit 150ccfd89f1e7fae13d118e133673d9f13b4853f[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Sat Jan 14 21:51:47 2023 +0600
+
+    css updated, dcrypt done
+
+[33mcommit c2412e2391ff5eae6157d208608fe910424c34a3[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Sat Jan 14 12:06:36 2023 +0600
+
+    hr page working functionally
+
+[33mcommit 33723b185a79ed0308c1d163d3e41cb9696a3550[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Sat Jan 14 02:26:08 2023 +0600
+
+    sigin created UI
+
+[33mcommit 74c6a5f886614ff2128d17a00d53d9d15cb08ec3[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Sat Jan 14 01:23:16 2023 +0600
+
+    filter working without css
+
+[33mcommit ff05860be421a430a63535199d3bfce372cc3154[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Thu Jan 12 20:09:30 2023 +0600
+
+    portfolio gets all data
+
+[33mcommit 5fd047bdc2c4d1276c9bea315c0e7126a9d80cef[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Thu Jan 12 17:32:30 2023 +0600
+
+    leetcode integration going on
+
+[33mcommit 878370f72fdb423dad398d13ccae20a697931b9e[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Thu Jan 12 14:15:22 2023 +0600
+
+    portfolio starts working
+
+[33mcommit e17cd52a55876cb48ffb913c98b8fcd91d58ebe9[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Thu Jan 12 08:53:26 2023 +0600
+
+    brushed
+
+[33mcommit 61d262c56c00491f17e3aa79b0a18f24ab6b3323[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Thu Jan 12 08:51:49 2023 +0600
+
+    PUT,GET BE and FE updated
+
+[33mcommit 6ef9b1575f65bff75085b1a1a185883f6660ffa6[m
+Author: shuhat <shuhat1971@gmail.com>
+Date:   Thu Jan 12 02:03:12 2023 +0600
+
+    GET,POST working perfect
+
+[33mcommit 8dbb3d5fb9c10263b3cedc27acf693046f830499[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Wed Jan 11 20:58:35 2023 +0600
+
+    get works, render remaining
+
+[33mcommit 1521b2fdc8374ddf1a4bedcfb21855afa73a2c8d[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Wed Jan 11 18:17:35 2023 +0600
+
+    FE BE connection almost working
+
+[33mcommit 82aa8a266a5b0a01e9d90db71dc97a9c6f523625[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Wed Jan 11 13:12:28 2023 +0600
+
+    validated
+
+[33mcommit b62cbccfe514e4b16be63e15dda299ee6cd3ce52[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Tue Jan 10 20:41:29 2023 +0600
+
+    server working
+
+[33mcommit 96ada03a48a339bd032398bc9182aa8cd86abee6[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Tue Jan 10 16:57:21 2023 +0600
+
+    dashboard UI done
+
+[33mcommit 9b7ff3e43d08099698a30b1601d88d7b7ac93d14[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Tue Jan 10 11:40:15 2023 +0600
+
+    education UI updated
+
+[33mcommit b4493696d31901f345abe5416219a46e2214e6ce[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Mon Jan 9 19:24:45 2023 +0600
+
+    two section of dashboard UI done
+
+[33mcommit dfadcc80f68dee9fa8ac5bfc483242da30afc405[m
+Author: Kh Shuhat Uddin <shuhat1971@gmail.com>
+Date:   Mon Jan 9 17:18:00 2023 +0600
+
+    project structure setup
