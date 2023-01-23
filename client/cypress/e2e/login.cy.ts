@@ -14,6 +14,7 @@ describe('Starting e2e for Login', () => {
       cy.get('#submit-btn').click();
       cy.visit('/dashboard');
       
+      // this is test
       it('should add a basic info to the server', () => {
         cy.get('#sideBasic').click({force: true});
         cy.get('#fullName1').type('Kazi shuhat');
@@ -24,12 +25,7 @@ describe('Starting e2e for Login', () => {
         cy.get('#skillBtn1').click({force: true});
         cy.get('#submit1').click({force: true});
       })
-
-
     })
-
-   
-
   })
   
   
